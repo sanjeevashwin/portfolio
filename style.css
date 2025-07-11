@@ -11,6 +11,27 @@ body {
   color: white;
 }
 
+.marquee-container {
+  padding: 25px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+marquee{
+  padding: 5px 0px !important;
+}
+.skill-icon {
+  height: 50px;
+  margin: 0 25px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+ 
+}
+
+
 /* Hero/Header Section */
 .hero {
   height: 100vh;
