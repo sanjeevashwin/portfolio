@@ -343,3 +343,18 @@ h1 {
 .contact-links i {
   margin-right: 6px;
 }
+
+.resume a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.resume a:hover {
+  color: #00bcd4;
+}
+
+.resume i {
+  margin-right: 6px;
+}

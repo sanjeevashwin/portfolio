@@ -23,28 +23,38 @@
         <a href="https://mail.google.com/mail/?view=cm&to=sanjeevashwin045@gmail.com" target="_blank">
           <i class="fas fa-envelope"></i> sanjeevashwin045@gmail.com
         </a>
-        <a href="tel:+919361658291"><i class="fas fa-phone"></i> +91 93616 58291 </a>
+       <span id="phone-link"></span>
+
+<script>
+  const isMobile = /iPhone|Android|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+  const phoneElement = document.getElementById("phone-link");
+  if (isMobile) {
+    phoneElement.innerHTML = '<a href="tel:+919361658291"><i class="fas fa-phone"></i> +91 93616 58291</a>';
+  } else {
+    phoneElement.innerHTML = '<i class="fas fa-phone"></i> +91 93616 58291';
+  }
+</script>
+
       </div>
 
       <div class="intro">
         <p>👋 <b>Hi, I’m a DevOps Engineer with 1.3+ years of experience in automating deployments and optimizing CI/CD workflows </b> </p>
         <br>
+        <div class = "resume">
+            <a href="/assests/resume/SANJEEV_DevOps_Engineer.pdf" target="_blank"><i class="fab fa-resume"></i> Resume</a>
+        </div>    
 
         <div class="marquee-container">
           <marquee behavior="scroll" direction="left" scrollamount="6">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" title="Linux"
-              class="skill-icon" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" title="Windows"
-              class="skill-icon" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS"
+ 
+               <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS"
               title="AWS" class="skill-icon" />
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" title="Azure"
+               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" title="Azure"
               class="skill-icon" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git"
+              class="skill-icon" />                       
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" title="Jenkins"
-              class="skill-icon" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git"
-              class="skill-icon" />
+              class="skill-icon" />        
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" title="Ansible"
               class="skill-icon" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title="Docker"
@@ -59,6 +69,11 @@
               class="skill-icon" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg"
               title="Prometheus" class="skill-icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" title="Linux"
+              class="skill-icon" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" title="Windows"
+              class="skill-icon" />
+
           </marquee>
         </div>
       </div>
@@ -81,7 +96,7 @@
         <ul>
           <li>Spearheaded the management of cloud infrastructure and automation using AWS services, ensuring
             scalability, security, and cost efficiency.</li>
-          <li>Managed source control systems (Git/GitLab) for version control and code management, ensuring seamless
+          <li>Managed source control systems (Git/Bitbucket) for version control and code management, ensuring seamless
             collaboration between development teams.</li>
           <li>Configured and maintained Jenkins CI/CD pipelines for continuous integration and deployment, streamlining
             the development lifecycle.</li>
@@ -192,7 +207,7 @@
         
           <h3>PGDCA</h3>
         <p><strong>Provider:</strong> Gurukulam Computers Education</p>
-        <p><strong>Date:</strong> 2022</p>
+        <p><strong>Date:</strong> 2016</p>
         <!-- Optional: <a href="https://your-pgdca-certificate-link.com" target="_blank">View Certificate</a> -->
       </div>
        </a>
@@ -201,18 +216,10 @@
   </section>
 
 
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Sanjeev R DevOps Engineer</p>
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 sanjeev</p>
-      <div class="socials">
-        <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
-  </footer>
-
-</body>
-
-</html>
+  </div>
+</footer>
