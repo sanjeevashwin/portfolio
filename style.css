@@ -16,9 +16,11 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-marquee{
+
+marquee {
   padding: 5px 0px !important;
 }
+
 .skill-icon {
   height: 50px;
   margin: 0 25px;
@@ -28,7 +30,7 @@ marquee{
 
 .skill-icon:hover {
   transform: scale(1.1);
- 
+
 }
 
 
@@ -110,7 +112,8 @@ p {
 .footer-content p {
   margin: 10px 0;
   text-align: center;
-  width: 100%; /* ensures it spans full width to center properly */
+  width: 100%;
+  /* ensures it spans full width to center properly */
 }
 
 
@@ -131,7 +134,7 @@ p {
 .experience-split {
   background-color: #ffffff;
   color: #222;
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .section-title h2 {
@@ -157,19 +160,22 @@ p {
   background: #f2f2f2;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .experience-box h3 {
-  color: #070000; /* Make h3 headings black */
+  color: #070000;
+  /* Make h3 headings black */
 }
 
 .experience-box li {
-  color: #070000; /* Make bullet points black */
+  color: #070000;
+  /* Make bullet points black */
 }
 
 .experience-box h4 {
-  color: #000000; /* Set h4 text to black */
+  color: #000000;
+  /* Set h4 text to black */
 }
 
 
@@ -185,22 +191,31 @@ p {
 .projects {
   background-color: #ffffff;
   color: #222;
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media screen and (max-width:778px) {
+  .project-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(320px, 1fr));
+  gap: 40px;
+  margin: 0 auto;
+}
 }
 
 .project-card {
   background-color: #f2f2f2;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -211,14 +226,17 @@ p {
 .project-card h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
-  color: #000000; /* changed from #00bcd4 to black */
+  color: #000000;
+  /* changed from #00bcd4 to black */
 }
 
 .project-card p {
   margin-bottom: 10px;
   line-height: 1.5;
-  font-weight: 500; /* made text thicker */
-  font-size: 1rem; /* this matches your current size */
+  font-weight: 500;
+  /* made text thicker */
+  font-size: 1rem;
+  /* this matches your current size */
   color: #000000;
 }
 
@@ -232,14 +250,19 @@ p {
 }
 
 .project-card a {
-  text-decoration: none;        /* No underline */
-  color: #12001f;               /* Your custom link color */
-  font-weight: 500;             /* Optional: Slightly bold */
+  text-decoration: none;
+  /* No underline */
+  color: #12001f;
+  /* Your custom link color */
+  font-weight: 500;
+  /* Optional: Slightly bold */
 }
 
 .project-card a:hover {
-  text-decoration: none;        /* Prevent underline on hover */
-  color: #12001f;               /* Keep the same color on hover */
+  text-decoration: none;
+  /* Prevent underline on hover */
+  color: #12001f;
+  /* Keep the same color on hover */
 }
 
 
@@ -262,7 +285,7 @@ p {
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -273,7 +296,8 @@ p {
 .cert-card h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
-  color: #000000; /* Changed from #00bcd4 to black */
+  color: #000000;
+  /* Changed from #00bcd4 to black */
 }
 
 
@@ -292,9 +316,12 @@ p {
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
 }
+
 .cert-card a:hover {
-  text-decoration: none;       /* No underline on hover */
-  color: #000000;              /* Keep hover color black too */
+  text-decoration: none;
+  /* No underline on hover */
+  color: #000000;
+  /* Keep hover color black too */
 }
 
 .intro {
@@ -308,7 +335,8 @@ p {
   list-style: none;
   padding-left: 0;
   margin: 20px 0;
-  text-align: left; /* This aligns list text to the left */
+  text-align: left;
+  /* This aligns list text to the left */
 }
 
 .emoji-list li {
@@ -330,7 +358,8 @@ h1 {
 }
 
 .contact-links a {
-  color: #ffffff; /* Or change based on your hero background */
+  color: #ffffff;
+  /* Or change based on your hero background */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
